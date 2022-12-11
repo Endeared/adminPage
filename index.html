@@ -12,12 +12,45 @@
 </head>
 
 <style>
+    .page {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 20% 80;
+    }
 
-.page {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
-}
+    .leftCont {
+        grid-template-rows: 1 / 3;
+        grid-template-columns: 1 / 2;
+        background-color: rgba(0, 0, 255, 0.176);
+    }
+
+    .rightCont {
+        grid-template-columns: 2 / 3;
+        grid-template-rows: 1 / 3;
+        background-color: rgba(255, 0, 0, 0.259);
+    }
+
+    .dash {
+        padding-bottom: 3vh;
+        padding-top: 1vh;
+    }
+
+    .firstSet {
+        padding-bottom: 3vh;
+    }
+
+    .secondSet {
+        padding-bottom: 70vh;
+    }
+
+    .topCont {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .topRow1 {
+        display: flex;
+    }
 
 </style>
 
@@ -27,33 +60,56 @@
 
         <div class="leftCont">
             <div class="leftElements">
-                dashboard
+                <div class="dash">dashboard</div>
+                <ul class="firstSet">
+                    <li>home</li>
+                    <li>profile</li>
+                    <li>messages</li>
+                    <li>history</li>
+                    <li>tasks</li>
+                    <li>communities</li>
+                </ul>
+                <ul class="secondSet">
+                    <li>settings</li>
+                    <li>support</li>
+                    <li>privacy</li>
+                </ul>
             </div>
         </div>
 
         <div class="rightCont">
-            <div class="topCont">
-                <div class="topRow1">
-                    name
+            <div class="rightContGrid">
+                <div class="topCont">
+                    <div class="topRow1">
+                        name
+                    </div>
+                    <div class="bottomRow1">
+                        name2 hi
+                    </div>
                 </div>
-                <div class="bottomRow1">
-                    name2 hi
-                </div>
-            </div>
-            <div class="bottomCont">
-                <div class="topRow2"></div>
-                <div class="bottomRow2">
-                    <div class="bottomLeftCont"></div>
-                    <div class="bottomRightCont">
-                        <div class="brTop">
+                <div class="bottomCont">
+                    <div class="topRow2">
+                        your projects
+                    </div>
+                    <div class="bottomRow2">
+                        <div class="bottomLeftCont">
+                            flashcards
                         </div>
-                        <div class="brMiddle">
-                        </div>
-                        <div class="brBottom">
+                        <div class="bottomRightCont">
+                            <div class="brTop">
+                                news
+                            </div>
+                            <div class="brMiddle">
+                                trending
+                            </div>
+                            <div class="brBottom">
+                                names
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>
