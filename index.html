@@ -12,6 +12,10 @@
 </head>
 
 <style>
+    body {
+        font-family: 'Calibri'
+    }
+
     .page {
         display: grid;
         grid-template-columns: 20% 80%;
@@ -54,6 +58,11 @@
         align-items: center;
     }
 
+    .bottomRow1 {
+        display: flex;
+        align-items: center;
+    }
+
     .smallimg {
         height: 30px;
         width: auto;
@@ -80,6 +89,122 @@
         width: 700px;
     }
 
+    #botLeftPfp {
+        height: 60px;
+        width: auto;
+    }
+
+    .topRow1 {
+        padding-top: 3vh;
+        padding-left: 2vw;
+    }
+
+    .bottomRow1 {
+        padding-top: 5vh;
+        padding-left: 3vw;
+    }
+
+    .bottomRow2,
+    .topRow2 {
+        display: flex;
+    }
+
+    .bottomRow2 {
+        margin-top: 1vh;
+    }
+
+    #projects,
+    .bottomLeftCont {
+        width: 70%;
+    }
+
+    .bottomCont {
+        padding-top: 6vh;
+    }
+
+    .stackedText {
+        padding-left: 1vw;
+    }
+
+    #new {
+        margin-left: 32vw;
+    }
+
+    .blueButtons {
+        margin-left: 4vw;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .bottomCont {
+        padding-left: 3vw;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card {
+        display: flex;
+        width: 50%;
+        margin-left: 2vh;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 2vh;
+        box-shadow: 0px 3px 5px grey;
+    }
+
+    .bottomLeftCont {
+        padding-right: 3vw;
+    }
+
+    .colorStrip {
+        width: 5px;
+        height: 20vh;
+        background-color: orange;
+    }
+
+    .brCornerCont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottomRightCont,
+    .bottomRightCont2 {
+        background-color: white;
+        margin-bottom: 4vh;
+        height: 28.5vh;
+        width: 20vw;
+    }
+
+    #trending {
+        margin-bottom: 1vh;
+    }
+
+    .dash {
+        padding-left: 5vw;
+        margin-top: 2vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .firstSet, .secondSet {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #dashImg {
+        height: 30px;
+        width: auto;
+    }
+
+    .dashImages {
+        height: 30px;
+        width: auto;
+    }
 
 </style>
 
@@ -89,9 +214,15 @@
 
         <div class="leftCont">
             <div class="leftElements">
-                <div class="dash">dashboard</div>
+                <div class="dash">
+                    <img id="dashImg" src="https://icons.veryicon.com/png/o/miscellaneous/decon/dashboard-76.png">
+                    <div>dashboard</div>
+                </div>
                 <ul class="firstSet">
-                    <li>home</li>
+                    <li>
+                        <img class="dashImages" id="homeImg" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        home
+                    </li>
                     <li>profile</li>
                     <li>messages</li>
                     <li>history</li>
@@ -110,35 +241,86 @@
             <div class="rightContGrid">
                 <div class="topCont">
                     <div class="topRow1">
-                        <img class="smallimg" src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png">
+                        <img class="smallimg"
+                            src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png">
                         <input id="search" type="text">
                         <img class="smallimg" id="bell" src="https://static.thenounproject.com/png/2295240-200.png">
                         <img id="topRightPfp" src="https://avatars.githubusercontent.com/u/114155576?v=4">
                         <div id="topRightName">Ross Hamey</div>
                     </div>
                     <div class="bottomRow1">
-                        name2 hi
+                        <img id="botLeftPfp" src="https://avatars.githubusercontent.com/u/114155576?v=4">
+                        <div class="stackedText">
+                            <div id="hi">Hi there,</div>
+                            <div id="hiName">Ross Hamey (@Endeared)</div>
+                        </div>
+                        <button class="blueButtons" id="new">New</button>
+                        <button class="blueButtons" id="upload">Upload</button>
+                        <button class="blueButtons" id="share">Share</button>
                     </div>
                 </div>
                 <div class="bottomCont">
                     <div class="topRow2">
-                        your projects
+                        <div id="projects">Your Projects</div>
+                        <div id="announcements">Announcements</div>
                     </div>
                     <div class="bottomRow2">
                         <div class="bottomLeftCont">
-                            flashcards
+                            <div class="row">
+                                <div class="card">
+                                    <div class="colorStrip"></div>card1
+                                </div>
+                                <div class="card">
+                                    <div class="colorStrip"></div>card2
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="card">
+                                    <div class="colorStrip"></div>card3
+                                </div>
+                                <div class="card">
+                                    <div class="colorStrip"></div>card4
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="card">
+                                    <div class="colorStrip"></div>card5
+                                </div>
+                                <div class="card">
+                                    <div class="colorStrip"></div>card6
+                                </div>
+                            </div>
                         </div>
-                        <div class="bottomRightCont">
-                            <div class="brTop">
-                                news
+                        <div class="brCornerCont">
+                            <div class="bottomRightCont">
+                                <div class="brTop">
+                                    news
+                                </div>
+                                <hr>
+                                <div class="brMiddle">
+                                    trending
+                                </div>
+                                <hr>
+                                <div class="brBottom">
+                                    names
+                                </div>
                             </div>
-                            <div class="brMiddle">
-                                trending
-                            </div>
-                            <div class="brBottom">
-                                names
+                            <div id="trending">Trending</div>
+                            <div class="bottomRightCont2">
+                                <div class="brTop">
+                                    news
+                                </div>
+                                <hr>
+                                <div class="brMiddle">
+                                    trending
+                                </div>
+                                <hr>
+                                <div class="brBottom">
+                                    names
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
