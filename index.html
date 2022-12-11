@@ -48,9 +48,38 @@
         flex-direction: column;
 
     }
+
     .topRow1 {
         display: flex;
+        align-items: center;
     }
+
+    .smallimg {
+        height: 30px;
+        width: auto;
+        padding-left: 1vw;
+        padding-right: 0.5vw;
+    }
+
+    #bell {
+        padding-left: 15vw;
+    }
+
+    #topRightPfp {
+        height: 40px;
+        width: auto;
+        padding-left: 1vw;
+    }
+
+    #topRightName {
+        padding-left: 1vw;
+    }
+
+    #search {
+        height: 30px;
+        width: 700px;
+    }
+
 
 </style>
 
@@ -81,7 +110,11 @@
             <div class="rightContGrid">
                 <div class="topCont">
                     <div class="topRow1">
-                        name
+                        <img class="smallimg" src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png">
+                        <input id="search" type="text">
+                        <img class="smallimg" id="bell" src="https://static.thenounproject.com/png/2295240-200.png">
+                        <img id="topRightPfp" src="https://avatars.githubusercontent.com/u/114155576?v=4">
+                        <div id="topRightName">Ross Hamey</div>
                     </div>
                     <div class="bottomRow1">
                         name2 hi
