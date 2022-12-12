@@ -5,241 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
-
-<style>
-    body {
-        font-family: 'Calibri'
-    }
-
-    .page {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: 20% 80;
-    }
-
-    .leftCont {
-        grid-template-rows: 1 / 3;
-        grid-template-columns: 1 / 2;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .rightCont {
-        grid-template-columns: 2 / 3;
-        grid-template-rows: 1 / 3;
-        background-color: rgb(220, 220, 220);
-    }
-
-    .dash {
-        padding-bottom: 3vh;
-        padding-top: 1vh;
-    }
-
-    .firstSet {
-        padding-bottom: 3vh;
-    }
-
-    .secondSet {
-        padding-bottom: 70vh;
-    }
-
-    .topCont {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .topRow1 {
-        display: flex;
-        align-items: center;
-    }
-
-    .bottomRow1 {
-        display: flex;
-        align-items: center;
-    }
-
-    .smallimg {
-        height: 30px;
-        width: auto;
-        padding-left: 1vw;
-        padding-right: 0.5vw;
-    }
-
-    #bell {
-        padding-left: 15vw;
-    }
-
-    #topRightPfp {
-        height: 40px;
-        width: auto;
-        padding-left: 1vw;
-    }
-
-    #topRightName {
-        padding-left: 1vw;
-    }
-
-    #search {
-        height: 30px;
-        width: 700px;
-    }
-
-    #botLeftPfp {
-        height: 60px;
-        width: auto;
-    }
-
-    .topRow1 {
-        padding-top: 3vh;
-        padding-left: 2vw;
-    }
-
-    .bottomRow1 {
-        padding-top: 5vh;
-        padding-left: 3vw;
-    }
-
-    .bottomRow2,
-    .topRow2 {
-        display: flex;
-    }
-
-    .bottomRow2 {
-        margin-top: 1vh;
-    }
-
-    #projects,
-    .bottomLeftCont {
-        width: 70%;
-    }
-
-    .bottomCont {
-        padding-top: 6vh;
-    }
-
-    .stackedText {
-        padding-left: 1vw;
-    }
-
-    #new {
-        margin-left: 32vw;
-    }
-
-    .blueButtons {
-        margin-left: 4vw;
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-
-    .bottomCont {
-        padding-left: 3vw;
-    }
-
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .card {
-        display: flex;
-        width: 50%;
-        margin-left: 2vh;
-        background-color: rgb(255, 255, 255);
-        margin-bottom: 2vh;
-        box-shadow: 0px 3px 5px grey;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-
-    .bottomLeftCont {
-        padding-right: 3vw;
-    }
-
-    .colorStrip {
-        width: 10px;
-        height: 20vh;
-        background-color: orange;
-    }
-
-    .brCornerCont {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bottomRightCont,
-    .bottomRightCont2 {
-        background-color: white;
-        margin-bottom: 4vh;
-        height: 28.5vh;
-        width: 20vw;
-    }
-
-    #trending {
-        margin-bottom: 1vh;
-    }
-
-    .dash {
-        padding-left: 4vw;
-        margin-top: 0.5vh;
-        display: flex;
-        align-items: center;
-        font-size: 3rem;
-        font-weight: 600;
-        color: rgb(0, 0, 0);
-    }
-
-    .firstSet, .secondSet {
-        list-style: none;
-        text-decoration: none;
-    }
-
-    #dashImg {
-        height: 70px;
-        width: auto;
-    }
-
-    .dashImages {
-        height: 30px;
-        width: auto;
-        margin-right: 1vw;
-        padding-left: 3vw;
-        color: rgb(0, 0, 0);
-        /* filter: saturate(100);
-        filter: contrast(0%); */
-        filter: brightness(1);
-    }
-
-    .firstSet li, .secondSet li {
-        padding-top: 1vh;
-        font-size: 2rem;
-        font-weight: 600;
-        color: rgb(0, 0, 0);
-    }
-
-    .titleText {
-        font-size: 2rem;
-        font-weight: 600;
-        padding-left: 1vw;
-        padding-top: 3vh;
-    }
-
-    .descText {
-        font-size: 1.5rem;
-        padding-left: 1vw;
-        padding-right: 4vw;
-    }
-
-
-
-</style>
 
 <body>
 
@@ -352,7 +123,7 @@
                                     <div class="colorStrip"></div>
                                     <div class="text">
                                         <div class="titleText">
-                                            Less Cool Project
+                                            Impossible App
                                         </div>
                                         <div class="descText">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -363,7 +134,7 @@
                                     <div class="colorStrip"></div>
                                     <div class="text">
                                         <div class="titleText">
-                                            Less Cool Project
+                                            Easy Peasy App
                                         </div>
                                         <div class="descText">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -376,7 +147,7 @@
                                     <div class="colorStrip"></div>
                                     <div class="text">
                                         <div class="titleText">
-                                            Less Cool Project
+                                            Ad Blocker
                                         </div>
                                         <div class="descText">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -387,7 +158,7 @@
                                     <div class="colorStrip"></div>
                                     <div class="text">
                                         <div class="titleText">
-                                            Less Cool Project
+                                            Money Maker
                                         </div>
                                         <div class="descText">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -399,29 +170,35 @@
                         <div class="brCornerCont">
                             <div class="bottomRightCont">
                                 <div class="brTop">
-                                    news
+                                    <div class="titleBr">Site Maintenance</div>
+                                    <div class="textBr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                                 </div>
                                 <hr>
                                 <div class="brMiddle">
-                                    trending
+                                    <div class="titleBr">Trending</div>
+                                    <div class="textBr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                                 </div>
                                 <hr>
                                 <div class="brBottom">
-                                    names
+                                    <div class="titleBr">Names</div>
+                                    <div class="textBr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                                 </div>
                             </div>
-                            <div id="trending">Trending</div>
+                            <div id="trending">Credits</div>
                             <div class="bottomRightCont2">
                                 <div class="brTop">
-                                    news
+                                    <div class="titleBr">Page made by:</div>
+                                    <div class="textBr">Ross Hamey</div>
                                 </div>
                                 <hr>
                                 <div class="brMiddle">
-                                    trending
+                                    <div class="titleBr">GitHub:</div>
+                                    <div class="textBr">@Endeared</div>
                                 </div>
                                 <hr>
                                 <div class="brBottom">
-                                    names
+                                    <div class="titleBr">Done for:</div>
+                                    <div class="textBr">The Odin Project</div>
                                 </div>
                             </div>
                         </div>
